@@ -16,7 +16,7 @@ export default function Tasks({tasks} : TasksProps) {
 
     return (
         <>
-            {!!taskList?.length && <div className="mx-auto w-full flex flex-wrap items-start rounded">
+            {!!taskList?.length && <div className="mx-auto w-full flex flex-wrap items-center sm:items-start rounded">
                 {taskList.map(item => <Card onChange={spliceCard} key={item.id} task={item} />)}
             </div>}
         </>
